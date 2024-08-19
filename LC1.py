@@ -5,10 +5,9 @@ answer = []
 
 # need to loop through the range of the set
 for i in range(len(nums)): # nums = 1,2,3,4,5 take len so 5, range 0-4
-    counter = 0 
-    for j in range(i + 1):
-        counter += nums[j]
-    answer.append(counter)
-
+    counter = 0            # initalized counter to 0
+    for j in range(i + 1): # index + 1 , j loops through 
+        counter += nums[j] # counter += retrieve element in j index of nums 
+    answer.append(counter) # append counter value to answer list 
 
 print(answer)
